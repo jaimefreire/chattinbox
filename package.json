@@ -11,9 +11,12 @@
   "dependencies": {
     "axon": "^2.0.2",
     "body-parser": "^1.15.2",
+    "compress": "^0.99.0",
+    "compression": "^1.6.2",
     "express": "^4.14.0",
     "express-json": "^1.0.0",
     "redis": "^2.6.2",
+    "st": "^1.2.0",
     "underscore": "^1.8.3"
   }
 }

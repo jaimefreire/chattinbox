@@ -3,18 +3,18 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport"    content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="">
-	<meta name="author"      content="Sergey Pozhilov (GetTemplate.com)">
+	<meta name="description" content="Chattinbox application inside a SPA">
+	<meta name="author"      content="Jaime Freire">
 	
 	<title>Welcome to Chattinbox!</title>
 
-	<link rel="shortcut icon" href="assets/images/gt_favicon.png">
+	<link rel="shortcut icon" href="/images/gt_favicon.png">
 	
 	<!-- Bootstrap itself -->
 	<link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet" type="text/css">
 
 	<!-- Custom styles -->
-	<link rel="stylesheet" href="assets/css/magister.css">
+	<link rel="stylesheet" href="/css/magister.css">
 
 	<!-- Fonts -->
 	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -30,10 +30,9 @@
 			<button type="button" class="navbar-toggle" data-toggle="dropdown"><span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
 			<!-- <a data-toggle="dropdown" href="#">Dropdown trigger</a> -->
 			<ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
-				<li><a href="#head" class="active">Hello</a></li>
+				<li><a href="#head" class="active">Chattinbox!</a></li>
+				<li><a href="#themes">Technology</a></li>
 				<li><a href="#about">About me</a></li>
-				<li><a href="#themes">Themes</a></li>
-				<li><a href="#contact">Get in touch</a></li>
 			</ul>
 		</div>
 	</div>
@@ -45,21 +44,35 @@
 	<div class="container">
 
 		<div class="row">
-			<div class="col-md-10 col-lg-10 col-md-offset-1 col-lg-offset-1 text-center">	
-
+			<div class="col-md-12 col-lg-12 text-center">	
 				<!-- Site Title, your name, HELLO msg, etc. -->
-				<h1 class="title">Magister</h1>
-				<h2 class="subtitle">Free html5 template by GetTemplate</h2>
+				<h1 class="title">Chattinbox!</h1>
+				<h2 class="subtitle">Free real time chatting service</h2>
 
 				<!-- Short introductory (optional) -->
 				<h3 class="tagline">
 					Potentially, the best place to tell people why they are here.<br>
-					So, this is a demo page built to showcase the beauty of the template.
 				</h3>
-				
-				<!-- Nice place to describe your site in a sentence or two -->
-				<p><a href="/download/" class="btn btn-default btn-lg">Download template now</a></p>
-	
+				    <div class="text-center">
+						<!-- Short introductory (optional) -->
+				<h3 class="status" id="status">
+					Disconnected.
+				</h3>
+						
+    			<div class="col-md-3 col-lg-2 text-center">	
+					<label for="clientsList" class="btn btn-primary">Connected clients</label>
+					<textarea class="form-control" rows="35" id="clientList"></textarea>
+				</div>
+				<div class="col-md-9 col-lg-10 text-center">	
+				      <label for="chat" class="btn btn-primary">What's going on?:</label>
+				      <form id="chatForm">
+						  <textarea class="form-control" rows="35" id="chat"></textarea>
+				      </form>
+					</div>
+				</div>				
+				<hr>
+				<!-- Donate -->
+				<p><a href="#" class="btn btn-default btn-lg">Donate!</a></p>
 			</div> <!-- /col -->
 		</div> <!-- /row -->
 	
@@ -80,67 +93,12 @@
 				<h5><strong>More, more lipsum!<br></strong></h5>    
 				<p>Tempore, eos, voluptatem minus commodi error aut eaque neque consequuntur optio nesciunt quod quibusdam. Ipsum, voluptatibus, totam, modi perspiciatis repudiandae odio ad possimus molestias culpa optio eaque itaque dicta quod cupiditate reiciendis illo illum aspernatur ducimus praesentium quae porro alias repellat quasi cum fugiat accusamus molestiae exercitationem amet fugit sint eligendi omnis adipisci corrupti. Aspernatur.</p>    
 				<h5><strong>Author links<br></strong></h5>    
-				<p><a href="http://be.net/pozhilov9409">Behance</a> / <a href="https://twitter.com/serggg">Twitter</a> / <a href="http://linkedin.com/pozhilov">LinkedIn</a> / <a href="https://www.facebook.com/pozhilov">Facebook</a></p>
+				<p><a href="http://be.net/pozhilov9409">Behance</a> / <a href="https://twitter.com/serggg">Twitter</a> / <a href="http://linkedin.com/jaimefreire">LinkedIn</a></p>
 			</div>
 		</div>
 	</div>
 </section>
 
-<!-- Third (Works) section -->
-<section class="section" id="themes">
-	<div class="container">
-	
-		<h2 class="text-center title">More Themes</h2>
-		<p class="lead text-center">
-			Huge thank you to all people who publish<br>
-			their photos at <a href="http://unsplash.com">Unsplash</a>, thank you guys!
-		</p>
-		<div class="row">
-			<div class="col-sm-4 col-sm-offset-2">
-				<div class="thumbnail">
-					<img src="assets/screenshots/sshot1.jpg" alt="">
-					<div class="caption">
-						<h3>Thumbnail label</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque doloribus enim vitae nam cupiditate eius at explicabo eaque facere iste.</p>
-						<p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
-					</div>
-				</div>
-			</div>
-			<div class="col-sm-4">
-				<div class="thumbnail">
-					<img src="assets/screenshots/sshot4.jpg" alt="">
-					<div class="caption">
-						<h3>Thumbnail label</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque doloribus enim vitae nam cupiditate eius at explicabo eaque facere iste.</p>
-						<p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
-					</div>
-				</div>
-			</div>
-			<div class="col-sm-4 col-sm-offset-2">
-				<div class="thumbnail">
-					<img src="assets/screenshots/sshot5.jpg" alt="">
-					<div class="caption">
-						<h3>Thumbnail label</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque doloribus enim vitae nam cupiditate eius at explicabo eaque facere iste.</p>
-						<p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
-					</div>
-				</div>
-			</div>
-			<div class="col-sm-4">
-				<div class="thumbnail">
-					<img src="assets/screenshots/sshot3.jpg" alt="">
-					<div class="caption">
-						<h3>Thumbnail label</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque doloribus enim vitae nam cupiditate eius at explicabo eaque facere iste.</p>
-						<p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
-					</div>
-				</div>
-			</div>
-
-		</div>
-
-	</div>
-</section>
 
 <!-- Fourth (Contact) section -->
 <section class="section" id="contact">
@@ -168,9 +126,9 @@
 <!-- Load js libs only when the page is loaded. -->
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
-<script src="assets/js/modernizr.custom.72241.js"></script>
+<script src="/js/modernizr.custom.72241.js"></script>
 <!-- Custom template scripts -->
-<script src="assets/js/magister.js"></script>
+<script src="/js/magister.js"></script>
 <html>
 <head>
 	<title>Welcome to ChattinBox!</title>
@@ -181,15 +139,49 @@
 <script>
 	//When page loads, we connect to the chat server
 	var socket = io.connect('http://localhost:8080');
-	socket.on('messages', function(data){
-		insertMessage(data);
-	});
+	
 	socket.on('connect', function(data){
-		$('#status').html('Connected to the chattinbox!');
+		$('#status').html('Connected!');
 		nickname = prompt("What is your nickname?");
 		//Notify server or user's nickname
-		server.emit('join', nickname);
+		socket.emit('join', nickname);
+		$('#clientList').append(nickname);
+		
 	});
+	socket.on('disconnect', function(data){
+		$('#status').html('Disconnected');
+	});
+	//Another client joins
+	socket.on('join', function(nickname){
+		console.log('join called')
+		//New line
+		$('#clientList').append('\n');
+		$('#clientList').append(nickname);
+	});
+	
+	socket.on('message', function(data){
+		console.log('client msg call: ' + data);
+		//APPEND did not work
+	    var currentVal = $('#chat').val();
+	    $('#chat').val(currentVal + '\n ' + data);    
+	});
+	
+	//Send text on click on enter
+	$('#chatForm').keydown(function(e) {
+	var key = e.which;
+	if (key == 13) {
+		// As ASCII code for ENTER key is "13"
+		//Broadcast chat text	
+		var message = $('#chat').val();
+        var lastLine = message.substr(message.lastIndexOf("\n")+1);
+		socket.emit('message', lastLine); // Submit form code
+	}
+	});
+	
+	$('#chat').click(function(e) {
+	    $('#chat').val('');    
+	});
+
 </script>
 
 	
